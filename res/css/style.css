@@ -22,14 +22,40 @@ body{
     padding: 10rem;
 }
 
-#name {
-    font-size: 8.5em;
-
-    position: absolute;
-    top: 0;
+#preference{
+    display: none;
 }
 
-#button {
+#select {
+    display: block;
+}
+
+
+#gender {
+    display: block;
+    width: 25em;
+    height: 5em;
+    margin: .2em;
+    cursor: pointer;
+    border: var(--clr-neon) 0.125em solid;
+    background-color: var(--clr-bg);
+    color: var(--clr-neon);
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-decoration: none;
+}
+
+
+#name {
+    font-size: 5.5em;
+    position: relative;
+    display: block;
+    
+}
+
+
+
+#play {
     font-size: 5em;
     
     background-color: var(--clr-bg);
@@ -52,7 +78,7 @@ body{
 
 }
     
-#button::before{
+#play::before{
     pointer-events: none;
     content: "";
     position: absolute;
@@ -69,7 +95,7 @@ body{
 
 }
 
-#button::after{
+#play::after{
     content: '';
     position: absolute;
     top: 0;
@@ -84,18 +110,20 @@ body{
 
 }
 
-#button:hover, 
-#button:focus{
+#play:hover, 
+#play:focus{
     background: var(--clr-neon);
     color: var(--clr-bg);
     text-shadow: none;
+    
+    
 }
 
-#button:hover::before,
-button:focus::before{
+#play:hover::before,
+#play:focus::before{
     opacity: 1;
 }
-#button:hover::after,
-#button:focus::after {
+#play:hover::after,
+#play:focus::after {
     opacity: 1;
 }
