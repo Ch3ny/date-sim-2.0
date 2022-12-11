@@ -3,6 +3,7 @@
 :root {
     --clr-neon: hsl(317 100% 54%);
     --clr-bg: hsl(323 21% 16%);
+    --clr-light:rgb(175, 238, 238)
 
   }
 
@@ -16,7 +17,7 @@ body{
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: grid;
-    place-items: center;
+    align-items: flex-start;
     background: var(--clr-bg);
     color: var(--clr-neon);
     padding: 10rem;
@@ -28,13 +29,15 @@ body{
 
 #select {
     display: block;
+    
 }
 
 
-#gender {
+.gender {
+    font-size:5em ;
     display: block;
-    width: 25em;
-    height: 5em;
+    width: 5em;
+    height: 1.5em;
     margin: .2em;
     cursor: pointer;
     border: var(--clr-neon) 0.125em solid;
@@ -43,14 +46,40 @@ body{
     padding: 0.25em 1em;
     border-radius: 0.25em;
     text-decoration: none;
+
 }
 
 
+#player-name{
+    display: none
+}
+
+
+input[type=text]{
+    padding: .85em;
+    background-color: aqua;
+}
+
+
+#preferemnce {
+    display: block;
+}
+
 #name {
     font-size: 5.5em;
-    position: relative;
+    display: inline;
+}
+
+
+
+#back {
+    font-size: 5em;
+    color: var(--clr-neon);
+    background-color: var(--clr-bg);
     display: block;
-    
+    border: .125em var(--clr-neon) solid;
+    border-radius: 0.25em;
+    cursor: pointer;
 }
 
 
@@ -60,7 +89,7 @@ body{
     
     background-color: var(--clr-bg);
     color: var(--clr-neon);
-    display: inline-block;
+    display:block;
     cursor: pointer;
     text-decoration: none;
     border: var(--clr-neon) 0.125em solid;
@@ -127,3 +156,4 @@ body{
 #play:focus::after {
     opacity: 1;
 }
+  
