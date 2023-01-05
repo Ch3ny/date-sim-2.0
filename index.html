@@ -8,32 +8,72 @@
 
     <link rel="stylesheet" href="./res/css/style.css">
 </head>
-<body>
+<body id="body">
     <div id="menu">
+        
         <h1 id="name">dating simulator</h1>
 <button id="play">PLAY</button>
     </div>
 
-    <div id="preference">
-        <h3 id="name">
-        Choose your preference
-    </h3>
-     <div id="select">
-    <button class="gender" id="man">Man</button>
-    <button class="gender" id="woman">Woman</button>
-    <button class="gender" id="other">Other</button>
-   </div> 
-    <button id="back">back to menu</button>
-
-</div>
+    
 
 <div id="player-name">
 <p id="name">type in your name that u'll be refered as to in story</p>
-<input type="text">
+<input type="text" id="nwm">
 <button id="enter">Enter</button>
 </div>
 
 
+<div id="game">
+    <div id="stage">
+     <p class="coment" id="c1">ugh...
+        what is the time now?
+     </p>
+     <img src="./res/img/custom iphone.jpg" alt="iphone" id="phone">
+     <p class="coment" id="c2">oh no holy chikens it's so LATE!!! i'll be late again!!</p>
+    <button id="next">next...</button>
+    </div>
+    
+    <div id="room"> 
+    <button class="arrows" id="bus">go to the bus station
+        <img src="./res/img/arrow.png" alt="arrow">
+    </button>
+    <button class="actions">take money</button>
+    </div>
+
+    <div id="station">
+        <button class="arrows" id="r">go back home</button>
+        <button class="arrows" id="">get on the bus
+            <img src="./res/img/arrow.png" alt="arrow">
+        </button>
+        <button class="actions">talk to stranger</button>
+
+    </div>
+
+    <div id="front_school">
+        <button class="arrows" id="croom">Go into the to school
+            <img src="./res/img/arrow.png" alt="arrow">
+        </button>
+        <button class="arrows" id="bs">Go to back of the school
+            <img src="./res/img/arrow.png" alt="arrow">
+        </button>
+        <button class="actions">talk to nerd</button>
+        <button class="actions"></button>
+    </div>
+
+<div id="classroom">
+    <button class="arrows" id="out">Go outside
+        <img src="./res/img/arrow.png" alt="arrow">
+        <button class="actions">talk to teacher</button>
+</div>
+
+    <div id="back_school">
+        <button class="arrows" id="fs">go to front of the school
+            <img src="./res/img/arrow.png" alt="arrow">
+        </button>
+        <button class="actions">talk to dude</button>
+    </div>
+</div>
 <script src="./res/js/main.js"></script>
 </body>
 </html>

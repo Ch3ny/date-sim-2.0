@@ -21,6 +21,8 @@ body{
     background: var(--clr-bg);
     color: var(--clr-neon);
     padding: 10rem;
+    background-size: cover;
+    background-position: center center;
 }
 
 #preference{
@@ -50,26 +52,103 @@ body{
 }
 
 
-#player-name{
-    display: none
+.coment{
+    display: block;
+    border: solid .4em black;
+    width: 15em;
+    background-color: black;
 }
 
+#c2{
+    display: none;
+}
+
+
+
+#next{
+    display: block;
+    background-color:black;
+    color: white;
+    font-size: 2em;
+    border: solid .15em white;
+    box-shadow: 0 0 .5em 0;
+    margin-left:36em ;
+    margin-bottom: 30em;
+}
+
+#phone{
+    display: none;
+    float: right;
+    margin-bottom: 5em ;
+}
+
+.actions{
+    border: .075em solid red;
+    background-color: red;
+    border-radius: 100em 100em 100em 100em;
+    height: 5em;
+    width: 5em;
+    cursor: pointer;
+}
+
+
+.arrows{
+    border: .075em solid red;
+    background-color: red;
+    border-radius: 0 .652em .652em 0;
+    cursor: pointer;
+
+}
+ 
+  /*use transform:rotate(xdeg) on arrows 
+  */
+
+
+#station{
+    display: none;
+}
+
+#front_school{
+    display: none;
+}
+
+#back_school{
+    display: none;
+}
 
 input[type=text]{
-    padding: .85em;
- 
+    padding: .5em;
+    color: white;
+    font-size: 1em;
+    border: none;
+    background-color: black;
 }
 
 
-#preferemnce {
-    display: block;
+#player-name {
+    display: none;
 }
+
+
 
 #name {
     font-size: 5.5em;
     display: inline;
 }
 
+#room { 
+    display: block;   
+    background-color: transparent;
+}
+
+.arrows {
+    display: block;
+    
+}
+
+#classroom{
+    display: none;
+}
 
 
 #back {
@@ -80,6 +159,14 @@ input[type=text]{
     border: .125em var(--clr-neon) solid;
     border-radius: 0.25em;
     cursor: pointer;
+}
+
+#game {
+    display: none;
+    width: 100%;
+    height: 45%;
+    bottom: 0;
+    color: white;;
 }
 
 
@@ -157,3 +244,12 @@ input[type=text]{
     opacity: 1;
 }
   
+
+
+input[type=text]:focus{
+    box-shadow: 0 0 1.75em 0 white 
+    , 0 0 1.75em 0 white;
+    border-radius: .5em;
+    border: none;
+    background-color: black;
+}
